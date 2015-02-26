@@ -156,7 +156,7 @@ public class GaeLocalConfiguration extends ModuleBasedConfiguration<GoApplicatio
                     throw new CantRunException("No Go AppEngine Sdk defined for this project");
                 }
 
-                String goExecName = sdkData.SDK_HOME_PATH + File.separator + "goapp";
+                String goExecName = sdkData.SDK_HOME_PATH + File.separator + "app_serve.py";
 
                 if (GoSdkUtil.isHostOsWindows()) {
                     goExecName = goExecName.concat(".bat");
